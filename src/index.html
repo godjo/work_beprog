@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Atlassian</title>
+  <link rel="icon"
+        type="image/png"
+        href="favicon.png">
+  <link rel="stylesheet" href="styles/main.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__logo">
+      <a href="#">
+        <svg width="79" height="28">
+          <use xlink:href="img/symbol/sprite.svg#logo"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="header__select dropdown">
+      <button class="dropdown-toggle lang-btn" id="dropdownMenuButton" type="button"
+              aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+        <span class="lang-text">English</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right lang-menu" aria-labelledby="dropdownMenuButton">
+        <a class="ru-lang-link dropdown-item current" href="?lang=ru">Русский</a>
+        <a class="en-lang-link dropdown-item" href="?lang=en">English</a>
+        <a class="en-lang-link dropdown-item" href="?lang=de">Deutsch</a>
+        <a class="en-lang-link dropdown-item" href="?lang=fr">Français</a>
+        <a class="en-lang-link dropdown-item" href="?lang=it">Italiano</a>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="section container">
+    <div class="section__image">
+      <picture>
+        <source srcset="img/pic/bg/phone-desktop.png" media="(min-width: 768px)">
+        <img src="img/pic/bg/phone.png" alt="">
+      </picture>
+    </div>
+    <div class="container">
+      <h1 class="section__title">Анонимный мессенджер — без регистрации и номера телефона</h1>
+
+      <p class="section__description">BeProg — это мессенджер, где можно начать общение с друзьями и коллегами без
+        номера
+        телефона и регистрации. Чаты зашифрованы с помощью код-пароля.</p>
+
+      <ul class="section__list">
+        <li class="section__item">
+          <a href="#">
+            <svg width="18" height="21">
+              <use xlink:href="img/symbol/sprite.svg#apple"/>
+            </svg>
+
+            <span>iPhone</span>
+          </a>
+        </li>
+
+        <li class="section__item">
+          <a href="#">
+            <svg width="18" height="22">
+              <use xlink:href="img/symbol/sprite.svg#android"/>
+            </svg>
+
+            <span>Android</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <a href="#">
+        <span>© BeProg</span>
+        <svg width="52" height="36">
+          <use xlink:href="img/symbol/sprite.svg#frog"/>
+        </svg>
+      </a>
+    </div>
+
+    <a class="footer__email" href="#">hello@beprog.org</a>
+
+    <ul class="footer__social">
+      <li>
+        <a href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/symbol/sprite.svg#facebook"/>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/symbol/sprite.svg#instagram"/>
+          </svg>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <svg width="24" height="20">
+            <use xlink:href="img/symbol/sprite.svg#twitter"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="footer__links-list">
+      <li>
+        <a href="#">Условия эксплуатации</a>
+      </li>
+
+      <li>
+        <a href="#">Политика конфиденциальности</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

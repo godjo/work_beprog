@@ -1,0 +1,172 @@
+.footer {
+  padding-top: 18px;
+  background-color: #FCFCFC;
+  border-top: 1px solid #E7E7F1;
+
+  @media screen and(min-width: 1024px) {
+    padding: 53px 0;
+  }
+
+  .container {
+    @media screen and (min-width: 576px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and(min-width: 768px) {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and(min-width: 1200px) {
+      justify-content: inherit;
+      align-items: inherit;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 25%;
+    }
+
+    @media screen and(min-width: 1024px) {
+      width: 15%;
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: auto;
+      margin-right: 5%;
+    }
+
+    a {
+      display: flex;
+    }
+
+    span {
+      margin-top: 11px;
+      font: normal 16px/32px Montserrat;
+    }
+
+    svg {
+      width: 55px;
+      height: auto;
+    }
+  }
+
+  span,
+  a {
+    color: #797989;
+  }
+
+  &__email {
+    position: relative;
+    display: block;
+    margin-bottom: 13px;
+    font: normal 16px/40px Montserrat;
+
+    &:hover {
+      color: #00BF91;
+    }
+
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 25%;
+    }
+
+    @media screen and(min-width: 1024px) {
+      width: 16%;
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: auto;
+      margin-top: 8px;
+    }
+  }
+
+  &__social {
+    position: relative;
+    display: flex;
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 576px) {
+      width: 50%;
+      align-self: center;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 25%;
+    }
+
+    @media screen and(min-width: 1024px) {
+      width: 19%;
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: auto;
+      margin: 0 0 0 auto;
+    }
+
+    li {
+      a {
+        display: block;
+        padding: 12px;
+        background-color: rgba(121, 121, 137, .1);
+        border-radius: 50%;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__links-list {
+    position: relative;
+
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+
+    @media screen and(min-width: 768px) {
+      width: 100%;
+      display: flex;
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: auto;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-top: 8px;
+    }
+
+    li {
+      &:first-of-type {
+        margin-right: 40px;
+      }
+    }
+
+    a {
+      font: normal 16px/40px Montserrat;
+
+      &:hover {
+        color: #00BF91;
+      }
+    }
+  }
+}

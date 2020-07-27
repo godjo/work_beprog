@@ -1,0 +1,64 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #FCFCFC;
+}
+
+main {
+  @media screen and(min-width: 768px) {
+    background-color: rgb(218,222,225);
+    background-image: url("../img/pic/bg/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and(min-width: 1200px) {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      content: '';
+      background: url(../img/pic/bg/top-line.svg) 0 40px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and(min-width: 1200px) {
+    max-width: 1500px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: 1px solid #00BF91;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

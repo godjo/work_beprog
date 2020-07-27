@@ -1,0 +1,10 @@
+/* Fonts */
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: block;
+  }
+}

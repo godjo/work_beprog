@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    @media screen and(min-width: 1200px) {
+      padding-top: 64px;
+    }
+  }
+
+  &__select {
+    position: relative;
+    font: normal 15px/32px Montserrat;
+    color: #868A9A;
+
+    button {
+      position: relative;
+      padding-right: 35px;
+      padding-top: 4px;
+
+      &:focus {
+        outline: none;
+      }
+
+      @media screen and(min-width: 1200px) {
+        padding-right: 54px;
+      }
+
+      &.dropdown-toggle::after {
+        position: absolute;
+        margin: auto;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        transform: translateY(2px);
+        border: 0;
+        width: 10px;
+        height: 6px;
+        background-image: url("../img/pic/ico/arrow.svg");
+        background-repeat: no-repeat;
+
+        @media screen and(min-width: 1200px) {
+          right: 34px;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      padding: 8px 16px;
+      @media screen and(min-width: 1200px) {
+        position: absolute;
+        transform: translate3d(-16px, 46px, 0) !important;
+        top: 0;
+        min-width: 126px;
+        left: 0;
+        will-change: transform;
+      }
+
+      a {
+        &:hover {
+          background-color: inherit;
+          color: #00BF91;
+        }
+      }
+    }
+
+    .dropdown-item {
+      padding: 0;
+      font: normal 15px/32px Montserrat;
+      color: #0F0F19;
+    }
+  }
+
+  &__logo {
+    svg {
+      @media screen and(min-width: 768px) {
+        width: 111px;
+        height: 38px;
+      }
+
+      @media screen and(min-width: 1200px) {
+        width: 113px;
+        height: 40px;
+      }
+    }
+  }
+}
